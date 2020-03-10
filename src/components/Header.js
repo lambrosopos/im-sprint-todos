@@ -27,6 +27,9 @@ const Header = props => {
   };
 
   const isGroupList = () => {
+    if (props.showSettings) {
+      return <h4>Settings</h4>;
+    }
     if (props.showGroupList) {
       return <h4>What To Do? </h4>;
     } else {
@@ -58,6 +61,7 @@ const Header = props => {
 
 const mapStateToProps = state => ({
   showGroupList: state.listReducer.showGroupList,
+  showSettings: state.settingsReducer.showSettings,
   currentAlarmGroup: state.listReducer.currentAlarmGroup
 });
 

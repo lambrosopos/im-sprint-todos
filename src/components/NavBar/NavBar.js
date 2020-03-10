@@ -2,9 +2,9 @@ import React from "react";
 import { Search } from "./Search.js";
 
 const Nav = props => (
-  <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-    <a className="navbar-brand" href="http://localhost:8080/">
-      Navbar
+  <nav className="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+    <a className="navbar-brand" href="#">
+      Atom-theme TodoList
     </a>
     <button
       className="navbar-toggler"
@@ -19,15 +19,9 @@ const Nav = props => (
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item active">
-          <a className="nav-link" href="https://youtube.com">
-            Youtube <span className="sr-only">(current)</span>
-          </a>
-        </li>
+        <li></li>
       </ul>
-      <div id="search-bar" className="col-md-7 col-md-offset-3">
-        <Search searchVodHandler={props.searchVodHandler} />
-      </div>
+
       <form className="form-inline my-2 my-lg-0">
         <input
           className="form-control mr-sm-2"

@@ -19,3 +19,10 @@ export {
   QUICK_ADD_GROUP,
   quickAddGroup
 } from "./QuickAddActions";
+
+export {
+  TOGGLE_SETTINGS,
+  toggleSettings,
+  SET_USERNAME,
+  setUserName
+} from "./settingsActions";

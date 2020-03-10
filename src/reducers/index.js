@@ -1,7 +1,8 @@
 import { combineReducers } from "redux";
-// import settingReducer from "./setting";
+import settingsReducer from "./settingsReducer";
 import listReducer from "./listReducer";
 
 export default combineReducers({
-  listReducer
+  listReducer,
+  settingsReducer
 });

@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import MainDisplay from "../components/MainDisplay";
+import SettingsList from "../components/Settings/SettingsList";
 
 const mapStateToProps = state => ({
   showGroupList: state.listReducer.showGroupList,
@@ -9,4 +9,4 @@ const mapStateToProps = state => ({
   userName: state.settingsReducer.userName
 });
 
-export default connect(mapStateToProps)(MainDisplay);
+export default connect(mapStateToProps)(SettingsList);

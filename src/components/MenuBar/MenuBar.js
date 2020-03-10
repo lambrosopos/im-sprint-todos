@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import ReactDOM from "react-dom";
 import ToggleList from "./ToggleList/ToggleList";
-import Settings from "./Settings/Settings";
+import Settings from "../Settings/Settings";
 import "./MenuBar.css";
 
 class MenuBar extends Component {
@@ -26,7 +26,10 @@ class MenuBar extends Component {
 }
 
 const mapStateToProps = state => ({
-  showGroupList: state.listReducer.showGroupList
+  showGroupList: state.listReducer.showGroupList,
+  currentAlarmGroup: state.listReducer.currentAlarmGroup,
+  alarmGroups: state.listReducer.alarmGroups,
+  showSettings: state.settingsReducer.showSettings
 });
 
 export default connect(mapStateToProps)(MenuBar);

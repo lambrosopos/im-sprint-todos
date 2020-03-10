@@ -24,8 +24,10 @@ class App extends Component {
 
 const mapStateToProps = state => ({
   showGroupList: state.listReducer.showGroupList,
+  showSettings: state.settingsReducer.showSettings,
   currentAlarmGroup: state.listReducer.currentAlarmGroup,
-  alarmGroups: state.listReducer.alarmGroups
+  alarmGroups: state.listReducer.alarmGroups,
+  userName: state.settingsReducer.userName
 });
 
 export default connect(mapStateToProps)(App);
