@@ -1,0 +1,88 @@
+.alarm-header {
+  height: 3em;
+  background-color: skyblue;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "system-ui";
+}
+
+.alarmlist-item {
+  background-color: white;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #98c379;
+  border-bottom: 1px solid black;
+  /* font-family: "system-ui"; */
+}
+
+.alarm-label {
+  margin-left: 10px;
+  font-size: 1em;
+  font-family: "Poiret One", cursive;
+}
+
+.deleteIcon {
+  position: absolute;
+  right: 10px;
+}
+
+.deleteIcon img {
+  width: 15px;
+  height: 15px;
+}
+
+.successIcon {
+  position: absolute;
+  right: 20px;
+}
+
+.successIcon img {
+  width: 15px;
+  height: 15px;
+}
+
+.addIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 1.2em;
+}
+
+.addIcon img {
+  width: 15px;
+  height: 15px;
+}
+
+.empty-info {
+  line-height: 16em;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Input  */
+
+.quickadd-input {
+  font-size: 1em;
+  font-family: "Poiret One", cursive;
+  margin-left: 11px;
+}
+
+.quickadd-input input {
+  width: 390px;
+  height: 2.5em;
+  border: none;
+  border-bottom: 2px solid grey;
+  background: transparent;
+  color: white;
+  /* margin-left: 10px; */
+  /* padding-left: 10px; */
+}
+
+.quickadd-input input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

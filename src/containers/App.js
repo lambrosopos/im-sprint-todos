@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import { connect } from "react-redux";
 import MainDisplay from "./MainDisplay";
 import Nav from "./Nav";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -9,15 +11,21 @@ class App extends Component {
   }
 
   render() {
-    <div className="container">
-      <Nav />
-      <MainDisplay />
-    </div>;
+    return (
+      <div>
+        <Nav />
+        <div className="container">
+          <MainDisplay />
+        </div>
+      </div>
+    );
   }
 }
 
-const mapStateToProps = state => {
-  return {};
-};
+const mapStateToProps = state => ({
+  showGroupList: state.listReducer.showGroupList,
+  currentAlarmGroup: state.listReducer.currentAlarmGroup,
+  alarmGroups: state.listReducer.alarmGroups
+});
 
 export default connect(mapStateToProps)(App);

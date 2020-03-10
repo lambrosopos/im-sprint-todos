@@ -1,7 +1,7 @@
 import React from "react";
 import { Search } from "./Search.js";
 
-export const Nav = props => (
+const Nav = props => (
   <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
     <a className="navbar-brand" href="http://localhost:8080/">
       Navbar
@@ -25,9 +25,22 @@ export const Nav = props => (
           </a>
         </li>
       </ul>
-      <div id="search-bar" classNameName="col-md-7 col-md-offset-3">
+      <div id="search-bar" className="col-md-7 col-md-offset-3">
         <Search searchVodHandler={props.searchVodHandler} />
       </div>
+      <form className="form-inline my-2 my-lg-0">
+        <input
+          className="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+          Search
+        </button>
+      </form>
     </div>
   </nav>
 );
+
+export default Nav;

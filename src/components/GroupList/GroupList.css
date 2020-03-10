@@ -1,0 +1,79 @@
+.alarmgroup-header {
+  /* background-color: white; */
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-top: 17px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #e5c07b;
+  position: relative;
+  height: 2.5em;
+}
+
+.group-label {
+  margin-left: 10px;
+  font-family: "Poiret One", cursive;
+  font-size: 0.9em;
+}
+
+.removeIcon {
+  position: absolute;
+  right: 11px;
+  bottom: 17px;
+}
+
+.removeIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+.empty-info {
+  line-height: 16em;
+  text-align: center;
+  font-style: italic;
+}
+
+#quickadd-input {
+  font-size: 1em;
+  font-family: "Poiret One", cursive;
+  margin-left: 25px;
+}
+
+#quickadd-input input {
+  width: 380px;
+  height: 2.5em;
+  border: none;
+  border-bottom: 2px solid grey;
+  background: transparent;
+  color: white;
+  /* margin-left: 10px; */
+  padding-left: 0px;
+}
+
+#quickadd-input input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.groups-container {
+  position: relative;
+}
+
+.plusIcon {
+  position: absolute;
+  right: 10px;
+  bottom: 1.2em;
+}
+
+.plusIcon img {
+  width: 20px;
+  height: 20px;
+}
+
+.groupheader {
+  margin-left: 10px;
+  font-family: "Poiret One", cursive;
+  font-size: 0.9em;
+}

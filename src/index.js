@@ -1,8 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+
+// Index styling
+import "./index.css";
+
+// Redux
+import { createStore } from "redux";
+import { Provider } from "react-redux";
+import AllReducers from "./reducers";
+
+// App container
+import App from "./containers/App";
 
 const store = createStore(
   AllReducers,
